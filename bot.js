@@ -283,7 +283,7 @@ let commandfile = client.commands.get(cmd.slice(prefix.length))
             
         }
         if(cmd === `${prefix}stats`){
-	    let TotalShards = client.shard.totalShards;
+	   
             let bicon = client.user.displayAvatarURL;
 	    const duration = moment.duration(client.uptime).format(" D [Days], H [Hours], m [minutes], s [Seconds]");
             let statsEmbed = new Discord.RichEmbed()
