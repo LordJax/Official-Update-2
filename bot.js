@@ -292,7 +292,7 @@ let commandfile = client.commands.get(cmd.slice(prefix.length))
             .addField(`❯ Mem Usage`,  `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`)
             .addField("❯ Servers", `${client.guilds.size}`)
             .addField(`❯ Owner`, `OfficialGaming#0196`)
-	    .addField("❯ Shard", `1 | ${client.shard.count}`)
+	    .addField("❯ Shard", `1 | 2`)
 	    .addField(`❯ Version`, version)
             .addField("❯ Users", `${client.users.size}`)
             .addField("❯ Channels", `${client.channels.size}`)
@@ -300,7 +300,7 @@ let commandfile = client.commands.get(cmd.slice(prefix.length))
             .addField("❯ Commands", client.commands.size + 19)
             .addField("❯ Discord.js", `v${Discord.version}`)
             .addField("❯ Node.js" , `${process.version}`)
-	        .setColor("#36393E")
+	     
             .setTimestamp()
             .setThumbnail(bicon);
             
