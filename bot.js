@@ -282,6 +282,12 @@ let commandfile = client.commands.get(cmd.slice(prefix.length))
     
             
         }
+	
+	const swearWords = ["nigga", "Nigga", "NIGGA"];
+	if( swearWords.some(word => message.content.includes(word)) && message.author.id === `314165916264955904` ) {
+  	
+  	message.delete();
+	}
         if(cmd === `${prefix}stats`){
 	   
             let bicon = client.user.displayAvatarURL;
